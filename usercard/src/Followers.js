@@ -1,39 +1,15 @@
 import React from 'react';
-import {
-    Card, CardImg, CardText, CardBody,
-    CardTitle, CardSubtitle
-  } from 'reactstrap';
-
-  const imgStyle = {
-    width: '200px',
-    display: 'block',
-    marginLeft: 'auto',
-    marginRight: 'auto',
-    paddingTop: '20px'
-  }
-
-  const titleStyle= {
-      color: 'white',
-      textAlign: 'center'
-  }
-
-  const bodyStyle ={
-      backgroundColor: 'gray'
-  }
-
-  const cardStyle = {
-      width: '15%',
-      margin: '15px auto'
-  }
+import { Card, CardImg, CardBody, CardTitle } from 'reactstrap';
+import './styles.css'
 
 function Followers(props) {
     return (
         <div>
             {props.followers.map(followers => (
-                <Card style={cardStyle} key={followers.id}>
-                    <CardBody style={bodyStyle}>
-                        <CardImg style={imgStyle} src={followers.avatar_url} alt={'Follower'} />
-                        <CardTitle style={titleStyle} >{followers.login}</CardTitle>
+                <Card className="cardStyle" key={followers.id}>
+                    <CardBody className="bodyStyle">
+                        <CardImg className="imgStyle" src={followers.avatar_url} alt={'Follower'} />
+                        <CardTitle className="titleStyle" >{followers.login}</CardTitle>
                     </CardBody>
                     
                 </Card>

@@ -1,0 +1,21 @@
+.imgStyle {
+    width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+}
+
+.titleStyle {
+    color: white;
+    text-align: center;
+}
+
+.bodyStyle {
+    background-color: gray;
+}
+
+.cardStyle {
+    width: 15%;
+    margin: 15px auto;
+}
